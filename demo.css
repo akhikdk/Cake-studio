@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 30px 40px; /* extra space for navbar */
+}
+
+/* Section 1 */
+.con {
+  background-image: url('https://wallpapers.com/images/hd/bakery-flat-lay-photography-n0dtv3j3l7pmtgek.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Section 2 */
+.con2 {
+  background-image: url('https://wallpaperaccess.com/full/1279331.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Content wrappers */
+.content-wrapper {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.hone, .hone2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.para, .para2 {
+  column-count: 2;
+  column-gap: 30px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #2c1f0f;
+  color: #f3e6d8;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.footer-content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  max-width: 400px;
+  margin: 0 auto 25px;
+  line-height: 1.5;
+  color: #e6d7bb;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #4b3820;
+  color: #f3e6d8;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Social brand colors on hover */
+.social-icon.fb:hover { background-color: #3b5998; }
+.social-icon.tw:hover { background-color: #1da1f2; }
+.social-icon.ig:hover { background-color: #e1306c; }
+.social-icon.pt:hover { background-color: #bd081c; }
+
+.footer-bottom {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #bba67e;
+}
